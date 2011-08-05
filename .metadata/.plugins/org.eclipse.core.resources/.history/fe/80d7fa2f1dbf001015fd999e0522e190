@@ -15,6 +15,7 @@ import org.eclipse.core.runtime.CoreException;
 import org.eclipse.jdt.core.IJavaProject;
 import org.eclipse.jdt.core.JavaCore;
 
+import rastreabilidade.CasoDeUso;
 import rastreabilidade.RegraDeNegocio;
 import rastreabilidade.plugin.anotacao.AnotacaoUtil;
 import rastreabilidade.plugin.util.PluginUtil;
