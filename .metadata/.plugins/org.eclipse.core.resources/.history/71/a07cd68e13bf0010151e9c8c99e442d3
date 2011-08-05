@@ -1,0 +1,5 @@
+source.. = .
+output.. = .
+bin.includes = META-INF/,\
+               rastreabilidade/,\
+               OSGI-INF/l10n/bundle.properties

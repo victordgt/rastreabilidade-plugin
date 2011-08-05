@@ -1,0 +1,14 @@
+package rastreabilidade.plugin.views.casodeuso;
+
+import java.util.List;
+
+public class PluginUtil {
+
+	public static List<String> retiraCaminhoBiblioteca(
+			GerenciadorCasoDeUso gerenciadorCasoDeUso,
+			String[] classpathEntries, List<String> arquivos) {
+		return gerenciadorCasoDeUso.retiraCaminhoBiblioteca(classpathEntries,
+				arquivos);
+	}
+
+}

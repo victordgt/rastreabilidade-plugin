@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+	<bundle bundleID="724" class="tjdf.sercos.SercosPlugin" localization="OSGI-INF/l10n/bundle" name="Plug-ins do SERCOS" project="PluginsSercos" provider="SERCOS">
+		<library name="."/>
+		<library name="lib/CacheDB.jar"/>
+		<library name="lib/mysql-connector-java-5.0.4-bin.jar"/>
+		<library name="lib/ojdbc5.jar"/>
+		<library name="lib/jtds-1.2.2.jar"/>
+	</bundle>
+	<bundle bundleID="723" class="rastreabilidade.plugin.Activator" localization="OSGI-INF/l10n/bundle" name="%Bundle-Name" project="rastreabilidade_plugin">
+		<library name="."/>
+		<library name="lib/rastreabilidade.jar"/>
+	</bundle>
+</map>

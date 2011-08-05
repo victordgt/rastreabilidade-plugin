@@ -1,0 +1,8 @@
+package rastreabilidade;
+
+public @interface RegraDeNegocio {
+	
+	String identificador();
+	
+
+}

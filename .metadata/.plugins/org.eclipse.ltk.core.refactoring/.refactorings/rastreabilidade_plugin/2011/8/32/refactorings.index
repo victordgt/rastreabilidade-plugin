@@ -1,0 +1,26 @@
+1312506523097	Extract method 'recuperaUrlsClasse'
+1312506604436	Extract method 'recuperaClassPathsProjeto'
+1312506687570	Extract method 'constroiMapaUrls'
+1312507103267	Rename type 'CasoDeUsoUtil'
+1312507177212	Rename method 'temAnotacaoCasoDeUso'
+1312507191800	Rename method 'temAnotacaoMetodoCasoDeUso'
+1312508744246	Move compilation unit
+1312508976448	Rename type 'CasoDeUsoView'
+1312509770132	Extract interface 'IGerenciadorArvore'
+1312510193632	Move compilation unit
+1312510565407	Extract local variable 'viewContentProvider'
+1312510594063	Convert local variable 'viewContentProvider' to field
+1312510658264	Move compilation units
+1312510683304	Move compilation unit
+1312510740980	Move compilation unit
+1312510967733	Move compilation unit
+1312510984462	Move compilation unit
+1312510996169	Move compilation unit
+1312511540485	Copy compilation units
+1312511564843	Rename type 'GerenciadorArvoreCasoDeUso'
+1312511853349	Rename type 'GerenciadorCasoDeUso'
+1312512019983	Rename local variable 'nodoCasoDeUso'
+1312512105786	Rename field 'mapaCasosDeUso'
+1312512182948	Rename local variable 'nomeCasoDeUso'
+1312513256137	Rename local variable 'casoDeUso'
+1312516964640	Move 1 resources to 'lib'

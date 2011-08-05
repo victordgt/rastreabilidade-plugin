@@ -1,0 +1,36 @@
+package rastreabilidade.plugin.views.casodeuso;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PluginUtil {
+	
+	
+
+	public List<String> retiraCaminhoBiblioteca(String[] classpathEntries,
+			List<String> arquivos) {
+
+		List<String> classes = new ArrayList<String>();
+		for (String classpath : classpathEntries) {
+			for (String arquivo : arquivos) {
+
+				if (arquivo.indexOf(classpath) >= 0) {
+					arquivo = arquivo.replaceAll(classpath, "");
+					arquivo = arquivo.replaceAll("/", ".");
+					if (arquivo.endsWith(".class")) {
+						arquivo = arquivo.replaceAll(".class", "");
+					}
+
+					if (arquivo.startsWith(".")) {
+						arquivo = arquivo.substring(1, arquivo.length());
+					}
+					classes.add(arquivo);
+				}
+
+			}
+		}
+
+		return classes;
+	}
+
+}

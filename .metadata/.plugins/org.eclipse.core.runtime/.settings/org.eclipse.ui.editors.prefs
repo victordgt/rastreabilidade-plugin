@@ -1,22 +1,3 @@
-#Sun Jul 17 23:23:19 BRT 2011
-additionIndicationColor=37,59,34
-htmlTagPairOccurrenceIndicationHighlighting=false
-changeIndicationColor=37,59,34
-xmlTagPairOccurrenceIndicationColor=94,94,94
-rubyBlockPairOccurrenceIndication=true
+#Fri Aug 05 01:07:05 BRT 2011
 eclipse.preferences.version=1
-pydevOccurrenceIndication=true
-pydevOccurrenceIndicationTextStyle=BOX
-rubyBlockPairOccurrenceIndicationColor=94,94,94
-htmlTagPairOccurrenceIndication=true
-htmlTagPairOccurrenceIndicationTextStyle=BOX
-rubyBlockPairOccurrenceIndicationHighlighting=false
-xmlTagPairOccurrenceIndicationTextStyle=BOX
-xmlTagPairOccurrenceIndicationHighlighting=false
-deletionIndicationColor=66,14,9
-searchResultIndicationColor=94,101,105
-pydevOccurrenceHighlighting=false
-rubyBlockPairOccurrenceIndicationTextStyle=BOX
-xmlTagPairOccurrenceIndication=true
-pydevOccurrenceIndicationColor=94,94,94
-htmlTagPairOccurrenceIndicationColor=94,94,94
+overviewRuler_migration=migrated_3.1
