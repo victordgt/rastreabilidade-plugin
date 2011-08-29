@@ -1,0 +1,63 @@
+package rastreabilidade.plugin.views.casodeuso;
+
+import java.lang.annotation.Annotation;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import org.eclipse.jdt.core.IType;
+
+import rastreabilidade.plugin.views.IGerenciadorArvore;
+import rastreabilidade.plugin.views.TreeObject;
+import rastreabilidade.plugin.views.TreeParent;
+
+
+public class GerenciadorArvoreCasoDeUso implements IGerenciadorArvore {
+	
+	private Map<String, List<IType>> mapa;
+	private Map<String, TreeParent> mapaCasosDeUso = new HashMap<String, TreeParent>();
+
+	public GerenciadorArvoreCasoDeUso(Map<String, List<IType>> mapa) {
+		this.mapa = mapa;
+	}
+	
+	@Override
+	public TreeParent contruirArvore() {
+		
+		Set<String> casosDeUso = mapa.keySet();
+		
+		TreeParent nodoInvisivel = new TreeParent("invisivel");
+		
+		for (String casoDeUso : casosDeUso) {		
+				TreeParent nodoCasoDeUso = null;
+			
+				//String nomeCasoDeUso = (String)Proxy.getInvocationHandler(anotacao).invoke(anotacao, metodos[0], null);
+				
+				nodoCasoDeUso = mapaCasosDeUso.get(casoDeUso);
+				
+				if (nodoCasoDeUso == null) {
+					nodoCasoDeUso = new TreeParent(casoDeUso);
+					mapaCasosDeUso.put(casoDeUso, nodoCasoDeUso);
+					nodoInvisivel.addChild(nodoCasoDeUso);
+				}
+				
+				
+				List<IType> classes = mapa.get(casoDeUso);
+				
+				if (classes != null) {
+					for (IType classe : classes) {
+						TreeObject nodo = new TreeObject(classe.getElementName());
+						nodoCasoDeUso.addChild(nodo);
+					}
+						
+				}
+		}
+		
+		return nodoInvisivel;
+	}
+	
+}

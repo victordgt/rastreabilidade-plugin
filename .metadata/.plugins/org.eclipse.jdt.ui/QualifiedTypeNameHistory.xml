@@ -5,4 +5,19 @@
 <fullyQualifiedTypeName name="rastreabilidade.plugin.views.regradenegocio.GerenciadorArvoreRegraDeNegocio"/>
 <fullyQualifiedTypeName name="rastreabilidade.plugin.views.regradenegocio.GerenciadorRegraDeNegocio"/>
 <fullyQualifiedTypeName name="rastreabilidade.plugin.views.RastreabilidadeView"/>
+<fullyQualifiedTypeName name="org.eclipse.jdt.core.IClassFile"/>
+<fullyQualifiedTypeName name="org.eclipse.jdt.core.ICompilationUnit"/>
+<fullyQualifiedTypeName name="org.eclipse.jdt.core.IAnnotation"/>
+<fullyQualifiedTypeName name="org.eclipse.jdt.core.IMemberValuePair"/>
+<fullyQualifiedTypeName name="org.eclipse.jdt.internal.compiler.apt.model.AnnotationMemberValue"/>
+<fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+<fullyQualifiedTypeName name="rastreabilidade.plugin.views.TreeObject"/>
+<fullyQualifiedTypeName name="org.eclipse.core.resources.IResource"/>
+<fullyQualifiedTypeName name="rastreabilidade.plugin.anotacao.AnotacaoUtil"/>
+<fullyQualifiedTypeName name="java.lang.annotation.Annotation"/>
+<fullyQualifiedTypeName name="rastreabilidade.plugin.util.PluginUtil"/>
+<fullyQualifiedTypeName name="rastreabilidade.plugin.artefato.GerenciadorCasoDeUso"/>
+<fullyQualifiedTypeName name="rastreabilidade.plugin.artefato.GerenciadorArtefato"/>
+<fullyQualifiedTypeName name="rastreabilidade.plugin.views.ConstrutorArvoreView"/>
+<fullyQualifiedTypeName name="rastreabilidade.plugin.artefato.GerenciadorRegraDeNegocio"/>
 </qualifiedTypeNameHistroy>

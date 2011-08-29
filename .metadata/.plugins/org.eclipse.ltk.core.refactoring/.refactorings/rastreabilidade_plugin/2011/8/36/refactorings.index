@@ -1,0 +1,10 @@
+1314576017167	Rename local variable 'casoDeUso'
+1314576026152	Rename local variable 'elementoRequisito'
+1314576061054	Rename type 'ConstrutorTreeObjectCasoDeUso'
+1314576092496	Rename method 'contruirArvore'
+1314576135808	Rename type 'ConstrutorTreeObject'
+1314576147639	Move compilation unit
+1314576795011	Extract method 'constroiAction1'
+1314576957216	Extract method 'abrirEditor'
+1314577064507	Extract method 'constroiDoubleClickAction'
+1314577907131	Delete elements

@@ -1,16 +1,16 @@
 package rastreabilidade.plugin.views;
 
-import java.lang.annotation.Annotation;
 import java.util.List;
 import java.util.Map;
 
+import org.eclipse.jdt.core.IType;
 import org.eclipse.jface.viewers.IStructuredContentProvider;
 import org.eclipse.jface.viewers.ITreeContentProvider;
 import org.eclipse.jface.viewers.Viewer;
 import org.eclipse.ui.part.ViewPart;
 
-import rastreabilidade.plugin.views.casodeuso.GerenciadorArvoreCasoDeUso;
-import rastreabilidade.plugin.views.casodeuso.GerenciadorCasoDeUso;
+import rastreabilidade.plugin.artefato.GerenciadorCasoDeUso;
+
 
 public class ViewContentProvider implements IStructuredContentProvider, ITreeContentProvider {
 	private TreeParent invisibleRoot;
@@ -60,13 +60,10 @@ public class ViewContentProvider implements IStructuredContentProvider, ITreeCon
 	 * code, you will connect to a real model and expose its hierarchy.
 	 */
 	private void initialize() {
-		
 		GerenciadorCasoDeUso gerenciador = new GerenciadorCasoDeUso();	
-		Map<Annotation, List<Class<?>>> mapa = gerenciador.getMapaClasses();
-		IGerenciadorArvore gerenciadorArvore = new GerenciadorArvoreCasoDeUso(mapa);
-		
-		invisibleRoot = gerenciadorArvore.contruirArvore();		
-		
+		Map<String, List<IType>> mapa = gerenciador.constroiMapa();
+		IGerenciadorArvore gerenciadorArvore = new ConstrutorArvoreView(mapa);
+		invisibleRoot = gerenciadorArvore.constroi();			
 	}
 	
 	public void setInvisibleRoot(TreeParent treeParent) {

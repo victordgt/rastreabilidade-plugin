@@ -1,0 +1,5 @@
+package rastreabilidade.plugin.artefato;
+
+public class GerenciadorRegraDeNegocio {
+
+}

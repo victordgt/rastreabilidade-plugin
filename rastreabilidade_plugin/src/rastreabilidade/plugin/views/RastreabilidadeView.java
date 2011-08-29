@@ -1,5 +1,11 @@
 package rastreabilidade.plugin.views;
 
+import java.util.List;
+import java.util.Map;
+
+import org.eclipse.core.resources.IFile;
+import org.eclipse.core.resources.ResourcesPlugin;
+import org.eclipse.jdt.core.IType;
 import org.eclipse.jface.action.Action;
 import org.eclipse.jface.action.IMenuListener;
 import org.eclipse.jface.action.IMenuManager;
@@ -18,12 +24,16 @@ import org.eclipse.swt.widgets.Menu;
 import org.eclipse.ui.IActionBars;
 import org.eclipse.ui.ISharedImages;
 import org.eclipse.ui.IWorkbenchActionConstants;
+import org.eclipse.ui.IWorkbenchPage;
 import org.eclipse.ui.PlatformUI;
+import org.eclipse.ui.ide.IDE;
 import org.eclipse.ui.part.DrillDownAdapter;
 import org.eclipse.ui.part.ViewPart;
 
-import rastreabilidade.plugin.views.regradenegocio.GerenciadorArvoreRegraDeNegocio;
-import rastreabilidade.plugin.views.regradenegocio.GerenciadorRegraDeNegocio;
+import rastreabilidade.plugin.artefato.GerenciadorCasoDeUso;
+import rastreabilidade.plugin.artefato.GerenciadorRegraDeNegocio;
+
+
 
 
 
@@ -56,7 +66,6 @@ public class RastreabilidadeView extends ViewPart {
 	private DrillDownAdapter drillDownAdapter;
 	private Action action1;
 	private Action action2;
-	private Action action3;
 	private Action doubleClickAction;
 
 	private ViewContentProvider viewContentProvider;
@@ -102,7 +111,7 @@ public class RastreabilidadeView extends ViewPart {
 	private void contributeToActionBars() {
 		IActionBars bars = getViewSite().getActionBars();
 		fillLocalPullDown(bars.getMenuManager());
-		fillLocalToolBar(bars.getToolBarManager());
+		//fillLocalToolBar(bars.getToolBarManager());
 	}
 
 	private void fillLocalPullDown(IMenuManager manager) {
@@ -114,7 +123,6 @@ public class RastreabilidadeView extends ViewPart {
 	private void fillContextMenu(IMenuManager manager) {
 		manager.add(action1);
 		manager.add(action2);
-		manager.add(action3);
 		manager.add(new Separator());
 		drillDownAdapter.addNavigationActions(manager);
 		// Other plug-ins can contribute there actions here
@@ -124,61 +132,90 @@ public class RastreabilidadeView extends ViewPart {
 	private void fillLocalToolBar(IToolBarManager manager) {
 		manager.add(action1);
 		manager.add(action2);
-		manager.add(action3);
+
 		
 		manager.add(new Separator());
 		drillDownAdapter.addNavigationActions(manager);
 	}
 
 	private void makeActions() {
+		constroiAction1();
+		constroiAction2();
+		constroiDoubleClickAction();
+	}
+
+	private void constroiDoubleClickAction() {
+		doubleClickAction = new Action() {
+			public void run() {
+				ISelection selection = viewer.getSelection();
+				Object obj = ((IStructuredSelection)selection).getFirstElement();
+				
+				//ABRIR O EDITOR JAVA PARA OS RECURSOS DA ÁRVORE
+				abrirEditor(obj);
+			}
+
+
+		};
+	}
+	
+	//ABRE O EDITOR PARA UM RECURSO DA ÁRVORE
+	private void abrirEditor(Object obj) {
+		if (obj instanceof TreeObject) {
+			TreeObject treeObject = (TreeObject) obj;
+			IFile ifile = ResourcesPlugin.getWorkspace().getRoot().
+			getFile(treeObject.getResource().getFullPath());
+			IWorkbenchPage dpage =
+				RastreabilidadeView.this.getViewSite()
+				.getWorkbenchWindow().getActivePage();
+			if (dpage != null) {
+				try {
+					IDE.openEditor(dpage, ifile,true);
+				}catch (Exception e) {
+					// log exception
+				}
+			}
+			
+		}
+	}
+
+	//AÇÃO PARA CONSTRUIR ÁRVORE DE CASO DE USO
+	private void constroiAction1() {
 		action1 = new Action() {
 			public void run() {
-				//TODO
-				showMessage("Ação para renderizar um caso de uso");
+				GerenciadorCasoDeUso gerenciador = new GerenciadorCasoDeUso();
+				Map<String, List<IType>> mapa = gerenciador.constroiMapa();
+				ConstrutorArvoreView gerenciadorArvore = new ConstrutorArvoreView(mapa);
+				viewContentProvider.setInvisibleRoot(gerenciadorArvore.constroi());
+				//tentar atualizar para outro tipo de visão
+				viewer.refresh();
 			}
 		};
 		action1.setText("Rastreabilidade por Caso de Uso");
 		action1.setToolTipText("Caso de Uso");
 		action1.setImageDescriptor(PlatformUI.getWorkbench().getSharedImages().
 			getImageDescriptor(ISharedImages.IMG_OBJS_INFO_TSK));
-		
-		action2 = new Action() {
+	}
+	
+	//AÇÃO PARA CONSTRUIR ÁRVORE DE REGRA DE NEGÓCIO
+	private void constroiAction2() {
+		action2 =  new Action() {
 			public void run() {
-				
-				GerenciadorRegraDeNegocio gerenciadorRegraDeNegocio = new GerenciadorRegraDeNegocio();
-				
-				IGerenciadorArvore gerenciadorArvore = new GerenciadorArvoreRegraDeNegocio(gerenciadorRegraDeNegocio.getMapaClasses());
-				viewContentProvider.setInvisibleRoot(gerenciadorArvore.contruirArvore());
-				showMessage("Trocou por regra de negócio");
-				
+				GerenciadorRegraDeNegocio gerenciador = new GerenciadorRegraDeNegocio();
+				Map<String, List<IType>> mapa = gerenciador.constroiMapa();
+				ConstrutorArvoreView gerenciadorArvore = new ConstrutorArvoreView(mapa);
+				viewContentProvider.setInvisibleRoot(gerenciadorArvore.constroi());
 				//tentar atualizar para outro tipo de visão
 				viewer.refresh();
-				
+
 			}
-		};
+		}; 
+		
 		action2.setText("Rastreabilidade por Regra de Negócio");
 		action2.setToolTipText("Regra de Negócio");
 		action2.setImageDescriptor(PlatformUI.getWorkbench().getSharedImages().
 				getImageDescriptor(ISharedImages.IMG_OBJS_INFO_TSK));
-		
-		action3 = new Action() {
-			public void run() {
-				showMessage("Action 3 executed");
-			}
-		};
-		action3.setText("Action 3");
-		action3.setToolTipText("Action 3 tooltip");
-		action3.setImageDescriptor(PlatformUI.getWorkbench().getSharedImages().
-				getImageDescriptor(ISharedImages.IMG_OBJS_INFO_TSK));		
-		
-		doubleClickAction = new Action() {
-			public void run() {
-				ISelection selection = viewer.getSelection();
-				Object obj = ((IStructuredSelection)selection).getFirstElement();
-				showMessage("Double-click detected on "+obj.toString());
-			}
-		};
 	}
+	
 
 	private void hookDoubleClickAction() {
 		viewer.addDoubleClickListener(new IDoubleClickListener() {

@@ -1,3 +1,4 @@
-#Thu Aug 04 22:22:23 BRT 2011
+#Mon Aug 22 21:53:53 BRT 2011
 org.eclipse.debug.ui.VariableView.org.eclipse.jdt.debug.ui.show_null_entries=true
 eclipse.preferences.version=1
+org.eclipse.debug.ui.ExpressionView.org.eclipse.jdt.debug.ui.show_null_entries=true

@@ -1,6 +1,7 @@
 package rastreabilidade.plugin.util;
 
 import java.io.File;
+import java.lang.annotation.Annotation;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
@@ -11,10 +12,18 @@ import org.eclipse.core.resources.IProject;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IPath;
 import org.eclipse.core.runtime.Path;
+import org.eclipse.jdt.core.ICompilationUnit;
+import org.eclipse.jdt.core.IJavaElement;
 import org.eclipse.jdt.core.IJavaProject;
+import org.eclipse.jdt.core.IPackageFragment;
+import org.eclipse.jdt.core.IType;
+import org.eclipse.jdt.core.JavaModelException;
 import org.eclipse.jdt.launching.JavaRuntime;
 
+import rastreabilidade.plugin.anotacao.AnotacaoUtil;
+
 public class PluginUtil {
+
 	
 	
 
@@ -56,6 +65,61 @@ public class PluginUtil {
 		}
 		return classPathEntries;
 	}
+	public List<ICompilationUnit> recuperaRecursosProjeto(IJavaProject project) {
+		
+		List<ICompilationUnit> compilaveis = new ArrayList<ICompilationUnit>();
+		
+		try {
+			
+			IJavaElement[] elementos = project.getPackageFragments();
+			
+			for (IJavaElement elemento : elementos) {	
+				percorreElementos(elemento, compilaveis);
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return compilaveis;
+        	                  
+	}
+	
+	
+	private void percorreElementos(IJavaElement javaElement, List<ICompilationUnit> compilaveis) {
+		
+		if (javaElement instanceof IPackageFragment) {
+			IPackageFragment fragmento = (IPackageFragment)javaElement;
+			
+			try {
+				for (IJavaElement elemento : fragmento.getChildren())
+				
+				percorreElementos(elemento, compilaveis);
+			} catch (JavaModelException e) {
+				e.printStackTrace();
+			}
+		} else if (javaElement instanceof ICompilationUnit) {
+			
+			ICompilationUnit compilationUnit = ((ICompilationUnit) javaElement);
+			compilaveis.add(compilationUnit);
+			
+		}
+		
+	}
+	
+	public List<IType> recuperaElementosComAnotacao(Class<? extends Annotation> classe, List<ICompilationUnit> compilaveis) {
+		List<IType> classesComAnotacao = new ArrayList<IType>();
+		for (ICompilationUnit compilationUnit : compilaveis) {
+			IType type = compilationUnit.findPrimaryType();
+		
+			if (AnotacaoUtil.temAnotacaoClasse(classe, type)) {
+				classesComAnotacao.add(type);
+			}
+		}
+		
+		return classesComAnotacao;
+	}
+
+	
 	
 	public List<URL> recuperaUrlsClasse(String[] classPathEntries) {
 		List<URL> urlList = new ArrayList<URL>();
@@ -112,6 +176,8 @@ public class PluginUtil {
 		}
 
 	}	
+	
+	
 
 	
 	

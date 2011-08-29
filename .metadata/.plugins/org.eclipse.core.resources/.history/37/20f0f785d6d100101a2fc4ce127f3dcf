@@ -1,0 +1,10 @@
+package rastreabilidade.plugin.artefato;
+
+import rastreabilidade.CasoDeUso;
+
+public class GerenciadorCasoDeUso extends GerenciadorArtefato {
+	public GerenciadorCasoDeUso() {
+		super(CasoDeUso.class);
+	}	
+	
+}

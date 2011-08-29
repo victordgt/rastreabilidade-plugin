@@ -1,0 +1,10 @@
+1314064065298	Rename local variable 'compilationUnitsComAnotacao'
+1314064078453	Rename local variable 'classes'
+1314555109306	Rename method 'getMapaClasses2'
+1314558173937	Rename local variable 'tempObj'
+1314558910598	Rename field 'mapa2'
+1314572919297	Copy compilation unit
+1314573936822	Delete element
+1314575809241	Rename type 'GerenciadorArvoreCasoDeUso'
+1314575962025	Rename local variable 'casosDeUso'
+1314575995037	Rename field 'mapaCasosDeUso'
