@@ -1187,3 +1187,388 @@ HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
 HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
 	handler=ActionHandler(org.eclipse.wst.jsdt.ui.actions.OpenAction@375c8e8d),
 	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@6d3206fd,ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@2b8153bd)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@9bed3d1)),sourcePriority=1064961)
+!SESSION 2011-10-03 22:03:08.097 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.6.0_26
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/Victor/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/Victor/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.resources 2 10035 2011-10-03 22:03:50.998
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2011-10-03 22:04:17.899
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2011-10-04 11:55:25.761 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.6.0_26
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/Victor/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/Victor/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2011-10-04 11:57:17.879
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2011-10-13 21:04:13.148 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.6.0_26
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/Victor/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/Victor/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2011-10-13 21:04:50.960
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2011-10-25 19:40:23.179 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.6.0_26
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/Victor/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/Victor/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2011-10-25 19:51:12.676
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-25 23:37:20.702
+!MESSAGE NLS unused message: add_script_load_bp in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-25 23:37:20.722
+!MESSAGE NLS unused message: bp_conditional in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-25 23:37:20.726
+!MESSAGE NLS unused message: bp_conditonal in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-25 23:37:20.727
+!MESSAGE NLS unused message: bp_entry_and_exit in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-25 23:37:20.727
+!MESSAGE NLS unused message: bp_entry_only in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-25 23:37:20.728
+!MESSAGE NLS unused message: bp_exit_only in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-25 23:37:20.728
+!MESSAGE NLS unused message: bp_hit_count in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-25 23:37:20.729
+!MESSAGE NLS unused message: bp_line_number in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-25 23:37:20.730
+!MESSAGE NLS unused message: bp_suspend_vm in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-25 23:37:20.731
+!MESSAGE NLS unused message: breakpoint_configuration in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-25 23:37:20.731
+!MESSAGE NLS unused message: connect in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-25 23:37:20.732
+!MESSAGE NLS unused message: connector in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-25 23:37:20.732
+!MESSAGE NLS unused message: connector_properties in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-25 23:37:20.733
+!MESSAGE NLS unused message: creating_script_load_bp in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-25 23:37:20.733
+!MESSAGE NLS unused message: enable_hit_count in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-25 23:37:20.734
+!MESSAGE NLS unused message: enter_new_hit_count in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-25 23:37:20.734
+!MESSAGE NLS unused message: exception_occurred_setting_bp_properties in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-25 23:37:20.735
+!MESSAGE NLS unused message: hit_count_must_be_positive in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-25 23:37:20.735
+!MESSAGE NLS unused message: no_description_provided in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-25 23:37:20.736
+!MESSAGE NLS unused message: scripts in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-25 23:37:20.736
+!MESSAGE NLS unused message: select_javascript_file in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-25 23:37:20.737
+!MESSAGE NLS unused message: set_bp_hit_count in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-25 23:37:20.738
+!MESSAGE NLS unused message: suspend_target in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-25 23:37:20.739
+!MESSAGE NLS unused message: suspend_thread in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-25 23:37:20.750
+!MESSAGE NLS unused message: the_argument_0_is_not_valid in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-25 23:37:20.750
+!MESSAGE NLS unused message: osgi.nls.warnings in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+!SESSION 2011-10-26 00:10:16.440 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.6.0_26
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/Victor/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/Victor/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-26 00:11:39.637
+!MESSAGE NLS unused message: add_script_load_bp in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-26 00:11:39.637
+!MESSAGE NLS unused message: bp_conditional in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-26 00:11:39.638
+!MESSAGE NLS unused message: bp_conditonal in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-26 00:11:39.638
+!MESSAGE NLS unused message: bp_entry_and_exit in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-26 00:11:39.638
+!MESSAGE NLS unused message: bp_entry_only in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-26 00:11:39.639
+!MESSAGE NLS unused message: bp_exit_only in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-26 00:11:39.640
+!MESSAGE NLS unused message: bp_hit_count in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-26 00:11:39.640
+!MESSAGE NLS unused message: bp_line_number in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-26 00:11:39.641
+!MESSAGE NLS unused message: bp_suspend_vm in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-26 00:11:39.641
+!MESSAGE NLS unused message: breakpoint_configuration in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-26 00:11:39.642
+!MESSAGE NLS unused message: connect in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-26 00:11:39.642
+!MESSAGE NLS unused message: connector in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-26 00:11:39.643
+!MESSAGE NLS unused message: connector_properties in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-26 00:11:39.643
+!MESSAGE NLS unused message: creating_script_load_bp in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-26 00:11:39.644
+!MESSAGE NLS unused message: enable_hit_count in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-26 00:11:39.644
+!MESSAGE NLS unused message: enter_new_hit_count in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-26 00:11:39.645
+!MESSAGE NLS unused message: exception_occurred_setting_bp_properties in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-26 00:11:39.645
+!MESSAGE NLS unused message: hit_count_must_be_positive in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-26 00:11:39.646
+!MESSAGE NLS unused message: no_description_provided in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-26 00:11:39.648
+!MESSAGE NLS unused message: scripts in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-26 00:11:39.649
+!MESSAGE NLS unused message: select_javascript_file in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-26 00:11:39.649
+!MESSAGE NLS unused message: set_bp_hit_count in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-26 00:11:39.650
+!MESSAGE NLS unused message: suspend_target in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-26 00:11:39.675
+!MESSAGE NLS unused message: suspend_thread in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-26 00:11:39.676
+!MESSAGE NLS unused message: the_argument_0_is_not_valid in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-10-26 00:11:39.676
+!MESSAGE NLS unused message: osgi.nls.warnings in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.core.net 1 0 2011-10-26 00:11:40.339
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2011-11-05 14:49:43.250 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.6.0_26
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/Victor/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/Victor/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 14:53:34.434
+!MESSAGE NLS unused message: add_script_load_bp in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 14:53:34.458
+!MESSAGE NLS unused message: bp_conditional in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 14:53:34.505
+!MESSAGE NLS unused message: bp_conditonal in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 14:53:34.506
+!MESSAGE NLS unused message: bp_entry_and_exit in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 14:53:34.508
+!MESSAGE NLS unused message: bp_entry_only in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 14:53:34.511
+!MESSAGE NLS unused message: bp_exit_only in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 14:53:34.512
+!MESSAGE NLS unused message: bp_hit_count in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 14:53:34.513
+!MESSAGE NLS unused message: bp_line_number in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 14:53:34.515
+!MESSAGE NLS unused message: bp_suspend_vm in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 14:53:34.515
+!MESSAGE NLS unused message: breakpoint_configuration in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 14:53:34.516
+!MESSAGE NLS unused message: connect in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 14:53:34.516
+!MESSAGE NLS unused message: connector in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 14:53:34.517
+!MESSAGE NLS unused message: connector_properties in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 14:53:34.517
+!MESSAGE NLS unused message: creating_script_load_bp in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 14:53:34.518
+!MESSAGE NLS unused message: enable_hit_count in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 14:53:34.518
+!MESSAGE NLS unused message: enter_new_hit_count in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 14:53:34.563
+!MESSAGE NLS unused message: exception_occurred_setting_bp_properties in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 14:53:34.564
+!MESSAGE NLS unused message: hit_count_must_be_positive in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 14:53:34.564
+!MESSAGE NLS unused message: no_description_provided in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 14:53:34.572
+!MESSAGE NLS unused message: scripts in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 14:53:34.572
+!MESSAGE NLS unused message: select_javascript_file in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 14:53:34.573
+!MESSAGE NLS unused message: set_bp_hit_count in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 14:53:34.573
+!MESSAGE NLS unused message: suspend_target in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 14:53:34.574
+!MESSAGE NLS unused message: suspend_thread in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 14:53:34.574
+!MESSAGE NLS unused message: the_argument_0_is_not_valid in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 14:53:34.575
+!MESSAGE NLS unused message: osgi.nls.warnings in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.core.net 1 0 2011-11-05 14:53:37.378
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2011-11-05 22:16:35.763 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.6.0_26
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/Victor/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/Victor/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 22:16:48.366
+!MESSAGE NLS unused message: add_script_load_bp in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 22:16:48.389
+!MESSAGE NLS unused message: bp_conditional in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 22:16:48.408
+!MESSAGE NLS unused message: bp_conditonal in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 22:16:48.409
+!MESSAGE NLS unused message: bp_entry_and_exit in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 22:16:48.409
+!MESSAGE NLS unused message: bp_entry_only in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 22:16:48.410
+!MESSAGE NLS unused message: bp_exit_only in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 22:16:48.410
+!MESSAGE NLS unused message: bp_hit_count in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 22:16:48.411
+!MESSAGE NLS unused message: bp_line_number in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 22:16:48.413
+!MESSAGE NLS unused message: bp_suspend_vm in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 22:16:48.416
+!MESSAGE NLS unused message: breakpoint_configuration in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 22:16:48.417
+!MESSAGE NLS unused message: connect in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 22:16:48.418
+!MESSAGE NLS unused message: connector in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 22:16:48.435
+!MESSAGE NLS unused message: connector_properties in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 22:16:48.436
+!MESSAGE NLS unused message: creating_script_load_bp in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 22:16:48.436
+!MESSAGE NLS unused message: enable_hit_count in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 22:16:48.437
+!MESSAGE NLS unused message: enter_new_hit_count in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 22:16:48.438
+!MESSAGE NLS unused message: exception_occurred_setting_bp_properties in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 22:16:48.439
+!MESSAGE NLS unused message: hit_count_must_be_positive in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 22:16:48.439
+!MESSAGE NLS unused message: no_description_provided in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 22:16:48.440
+!MESSAGE NLS unused message: scripts in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 22:16:48.441
+!MESSAGE NLS unused message: select_javascript_file in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 22:16:48.441
+!MESSAGE NLS unused message: set_bp_hit_count in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 22:16:48.442
+!MESSAGE NLS unused message: suspend_target in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 22:16:48.442
+!MESSAGE NLS unused message: suspend_thread in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 22:16:48.443
+!MESSAGE NLS unused message: the_argument_0_is_not_valid in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-11-05 22:16:48.443
+!MESSAGE NLS unused message: osgi.nls.warnings in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.core.net 1 0 2011-11-05 22:16:49.623
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;private void validaCasoDeUso()&apos; from &apos;rastreabilidade.processor.APTTeste.process()&apos; to &apos;rastreabilidade.processor.APTTeste&apos;&#x0A;- Original project: &apos;rastreabilidade_processor&apos;&#x0A;- Method name: &apos;validaCasoDeUso&apos;&#x0A;- Destination type: &apos;rastreabilidade.processor.APTTeste&apos;&#x0A;- Declared visibility: &apos;private&apos;" comments="false" description="Extract method &apos;validaCasoDeUso&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src&lt;rastreabilidade.processor{APTTeste.java" name="validaCasoDeUso" replace="false" selection="1355 203" stamp="1320514019725" version="1.0" visibility="2"/>
+</session>

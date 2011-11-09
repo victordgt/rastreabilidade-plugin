@@ -20,4 +20,7 @@
 <fullyQualifiedTypeName name="rastreabilidade.plugin.artefato.GerenciadorArtefato"/>
 <fullyQualifiedTypeName name="rastreabilidade.plugin.views.ConstrutorArvoreView"/>
 <fullyQualifiedTypeName name="rastreabilidade.plugin.artefato.GerenciadorRegraDeNegocio"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="java.io.File"/>
 </qualifiedTypeNameHistroy>
