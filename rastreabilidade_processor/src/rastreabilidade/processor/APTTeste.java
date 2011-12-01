@@ -71,7 +71,7 @@ public class APTTeste extends AbstractProcessor {
 			
 			
 			FileObject file = filer.createResource(StandardLocation.SOURCE_OUTPUT, "", "rastreabilidade.properties");
-			
+			filer.getResource(StandardLocation.SOURCE_OUTPUT, "", "rastreabilidade.properties");
 			PrintWriter writer = new PrintWriter(file.openWriter());
 			writer.print("Caso de Uso 1=blablabl");
 			writer.close();

@@ -29,8 +29,8 @@ org.apache.commons.collections,3.2.0.v201005080500,file:/Applications/eclipse/pl
 org.apache.commons.discovery,0.2.0.v201004190315,file:/Applications/eclipse/plugins/org.apache.commons.discovery_0.2.0.v201004190315/,4,false
 org.apache.commons.el,1.0.0.v201004212143,file:/Applications/eclipse/plugins/org.apache.commons.el_1.0.0.v201004212143.jar,4,false
 org.apache.commons.httpclient,3.1.0.v201005080502,file:/Applications/eclipse/plugins/org.apache.commons.httpclient_3.1.0.v201005080502.jar,4,false
-org.apache.commons.lang,2.1.0.v201005080500,file:/Applications/eclipse/plugins/org.apache.commons.lang_2.1.0.v201005080500.jar,4,false
 org.apache.commons.lang,2.3.0.v201005080501,file:/Applications/eclipse/plugins/org.apache.commons.lang_2.3.0.v201005080501.jar,4,false
+org.apache.commons.lang,2.1.0.v201005080500,file:/Applications/eclipse/plugins/org.apache.commons.lang_2.1.0.v201005080500.jar,4,false
 org.apache.commons.logging,1.0.4.v201005080501,file:/Applications/eclipse/plugins/org.apache.commons.logging_1.0.4.v201005080501.jar,4,false
 org.apache.commons.net,2.0.0.v200905272248,file:/Applications/eclipse/plugins/org.apache.commons.net_2.0.0.v200905272248.jar,4,false
 org.apache.jasper,5.5.17.v201004212143,file:/Applications/eclipse/plugins/org.apache.jasper_5.5.17.v201004212143.jar,4,false
@@ -729,3 +729,4 @@ org.sat4j.core,2.2.0.v20100429,file:/Applications/eclipse/plugins/org.sat4j.core
 org.sat4j.pb,2.2.0.v20100429,file:/Applications/eclipse/plugins/org.sat4j.pb_2.2.0.v20100429.jar,4,false
 org.uddi4j,2.0.5.v200805270300,file:/Applications/eclipse/plugins/org.uddi4j_2.0.5.v200805270300.jar,4,false
 rastreabilidade_plugin,1.0.0.qualifier,file:/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/,4,false
+teste,1.0.0.qualifier,file:/Users/Victor/Documents/rastreabilidade-plugin/teste/,4,false

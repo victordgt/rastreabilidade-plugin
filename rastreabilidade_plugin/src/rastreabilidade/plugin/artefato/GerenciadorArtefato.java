@@ -16,19 +16,35 @@ import org.eclipse.jdt.core.IMemberValuePair;
 import org.eclipse.jdt.core.IType;
 import org.eclipse.jdt.core.JavaCore;
 import org.eclipse.jdt.core.JavaModelException;
+import org.eclipse.jface.dialogs.MessageDialog;
+import org.eclipse.swt.widgets.Shell;
 
 import rastreabilidade.plugin.anotacao.AnotacaoUtil;
 import rastreabilidade.plugin.util.PluginUtil;
 
+/**
+ * Classe responsável pela associação entre artefatos de requisitos e classes Java
+ * 
+ * @author Victor
+ */
 public abstract class GerenciadorArtefato {
 	
+	/** Classe da anotação */
 	protected Class<? extends Annotation> clazz;
+	
+	/** Mapa com as chaves dos elementos e uma lista de classes associadas*/
 	protected Map<String, List<IType>> mapaArtefatos = new HashMap<String, List<IType>>();
+	
+	/** Campo a ser buscado na anotação para a recuperação do valor associado*/
 	protected String campo;
 	
-	protected GerenciadorArtefato(Class<? extends Annotation> clazz, String campo) {
+	/** Shell associado a view do Eclipse, para possibilitar a exibição de mensagens de erro*/
+	protected Shell shell;
+	
+	protected GerenciadorArtefato(Class<? extends Annotation> clazz, String campo, Shell shell) {
 		this.clazz = clazz;
 		this.campo = campo;
+		this.shell = shell;
 	}
 	
 	
@@ -47,23 +63,33 @@ public abstract class GerenciadorArtefato {
 
 
 			IJavaProject javaProject = JavaCore.create(project);
-
-			pluginUtil.recuperaRecursosProjeto(javaProject);
-
-			List<ICompilationUnit> compilaveis = pluginUtil.recuperaRecursosProjeto(javaProject);
-			List<IType> classesComAnotacao = pluginUtil.recuperaElementosComAnotacao(clazz, compilaveis);
-
-			filtrar(classesComAnotacao);
+			
+			//Verifica se o projeto está aberto para recuperar as informações associadas ao projeto
+			if (javaProject.isOpen()) {
+				//Carrega para a memória as propriedades de rastreabilidade do projeto java
+				try {
+					pluginUtil.carregaPropriedadesRastreabilidade(project);
+				} catch (IllegalArgumentException ex) {					
+					MessageDialog.openError(shell, "Erro", ex.getMessage());
+				}
+				
+	
+				List<ICompilationUnit> compilaveis = pluginUtil.recuperaRecursosProjeto(javaProject);
+				List<IType> classesComAnotacao = pluginUtil.recuperaElementosComAnotacao(clazz, compilaveis);
+	
+				filtrar(classesComAnotacao);
+			}
 		}		
 		
 		return mapaArtefatos;
 	}
-	
-	
-	//FILTRA POR PADRÃO UMA ANNOTATION COM UM CAMPO NOME
-	protected  void filtrar(List<IType> classesComAnotacao) {
 
-		AnotacaoUtil anotacaoUtil = new AnotacaoUtil();
+	
+	/**
+	 * FILTRA POR PADRÃO UMA ANNOTATION COM UM CAMPO NOME
+	 * @param classesComAnotacao
+	 */
+	protected  void filtrar(List<IType> classesComAnotacao) {
 
 		for (IType classe : classesComAnotacao) {
 
@@ -76,16 +102,7 @@ public abstract class GerenciadorArtefato {
 					if (AnotacaoUtil.comparaAnotacaoClasse(clazz, annotation)) {
 						try {
 							IMemberValuePair[] membros = annotation.getMemberValuePairs();
-							String nome = (String)anotacaoUtil.recuperaMemberValuePair(campo, membros);
-							
-							List<IType> listaTipos = mapaArtefatos.get(nome);
-
-							if (listaTipos == null) {
-								listaTipos = new ArrayList<IType>();
-								mapaArtefatos.put(nome, listaTipos);
-							}		
-
-							listaTipos.add(classe);
+							insereMembrosMapa(classe, campo, membros);
 						} catch (IllegalArgumentException e) {
 							e.printStackTrace();
 						} catch (JavaModelException e) {
@@ -95,10 +112,32 @@ public abstract class GerenciadorArtefato {
 				}				
 
 			} catch (JavaModelException e1) {
-				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
 		}		
+	}
+	
+	private void insereMembrosMapa(IType classe, String campo, IMemberValuePair[] membros) {	
+		AnotacaoUtil anotacaoUtil = new AnotacaoUtil();
+		PluginUtil pluginUtil = new PluginUtil();
+		
+		String chave = (String)anotacaoUtil.recuperaMemberValuePair(campo, membros);
+		
+		String valor = null;
+		try {
+			valor = pluginUtil.recuperaPropriedadeRastreabilidade(chave);
+		} catch(IllegalArgumentException ex) {
+			MessageDialog.openError(shell, "Erro", ex.getMessage());
+		}
+		
+		List<IType> listaTipos = mapaArtefatos.get(valor);
+
+		if (listaTipos == null) {
+			listaTipos = new ArrayList<IType>();
+			mapaArtefatos.put(valor, listaTipos);
+		}		
+
+		listaTipos.add(classe);		
 	}
 
 }

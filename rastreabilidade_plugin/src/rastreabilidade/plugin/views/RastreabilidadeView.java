@@ -58,7 +58,7 @@ import rastreabilidade.plugin.artefato.GerenciadorRegraDeNegocio;
 public class RastreabilidadeView extends ViewPart {
 
 	/**
-	 * The ID of the view as specified by the extension.
+	 * O id da view que Ž especificado pela extens‹o.
 	 */
 	public static final String ID = "rastreabilidade.plugin.views.RastreabilidadeView";
 
@@ -75,8 +75,8 @@ public class RastreabilidadeView extends ViewPart {
 	}
 
 	/**
-	 * This is a callback that will allow us
-	 * to create the viewer and initialize it.
+	 * 
+	 * Este Ž um callback que permite criar e inicializar o visualizador.
 	 */
 	public void createPartControl(Composite parent) {
 		viewer = new TreeViewer(parent, SWT.MULTI | SWT.H_SCROLL | SWT.V_SCROLL);
@@ -182,7 +182,7 @@ public class RastreabilidadeView extends ViewPart {
 	private void constroiAction1() {
 		action1 = new Action() {
 			public void run() {
-				GerenciadorCasoDeUso gerenciador = new GerenciadorCasoDeUso();
+				GerenciadorCasoDeUso gerenciador = new GerenciadorCasoDeUso(viewer.getControl().getShell());
 				Map<String, List<IType>> mapa = gerenciador.constroiMapa();
 				ConstrutorArvoreView gerenciadorArvore = new ConstrutorArvoreView(mapa);
 				viewContentProvider.setInvisibleRoot(gerenciadorArvore.constroi());
@@ -200,13 +200,12 @@ public class RastreabilidadeView extends ViewPart {
 	private void constroiAction2() {
 		action2 =  new Action() {
 			public void run() {
-				GerenciadorRegraDeNegocio gerenciador = new GerenciadorRegraDeNegocio();
+				GerenciadorRegraDeNegocio gerenciador = new GerenciadorRegraDeNegocio(viewer.getControl().getShell());
 				Map<String, List<IType>> mapa = gerenciador.constroiMapa();
 				ConstrutorArvoreView gerenciadorArvore = new ConstrutorArvoreView(mapa);
 				viewContentProvider.setInvisibleRoot(gerenciadorArvore.constroi());
 				//tentar atualizar para outro tipo de vis‹o
 				viewer.refresh();
-
 			}
 		}; 
 		

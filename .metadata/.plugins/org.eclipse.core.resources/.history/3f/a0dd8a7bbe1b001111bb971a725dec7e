@@ -1,0 +1,16 @@
+package rastreabilidade.plugin.ui;
+
+import org.eclipse.jface.dialogs.MessageDialog;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+
+public class MessageDialogUtil {
+	Display display = new Display();
+	Shell shell = new Shell(display);
+
+	public MessageDialogUtil(String mensagem) {
+		display.cu
+		MessageDialog.openError(shell, "Erro", mensagem);
+		
+	}
+}

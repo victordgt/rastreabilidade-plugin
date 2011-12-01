@@ -1,13 +1,17 @@
 package rastreabilidade.plugin.util;
 
 import java.io.File;
+import java.io.IOException;
 import java.lang.annotation.Annotation;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.util.ArrayList;
+import java.util.Formatter;
 import java.util.List;
+import java.util.Properties;
 
+import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IPath;
@@ -18,53 +22,17 @@ import org.eclipse.jdt.core.IJavaProject;
 import org.eclipse.jdt.core.IPackageFragment;
 import org.eclipse.jdt.core.IType;
 import org.eclipse.jdt.core.JavaModelException;
-import org.eclipse.jdt.launching.JavaRuntime;
 
 import rastreabilidade.plugin.anotacao.AnotacaoUtil;
 
 public class PluginUtil {
 
-	
-	
-
-	public List<String> retiraCaminhoBiblioteca(String[] classpathEntries,
-			List<String> arquivos) {
-
-		List<String> classes = new ArrayList<String>();
-		for (String classpath : classpathEntries) {
-			for (String arquivo : arquivos) {
-
-				if (arquivo.indexOf(classpath) >= 0) {
-					arquivo = arquivo.replaceAll(classpath, "");
-					arquivo = arquivo.replaceAll("/", ".");
-					if (arquivo.endsWith(".class")) {
-						arquivo = arquivo.replaceAll(".class", "");
-					}
-
-					if (arquivo.startsWith(".")) {
-						arquivo = arquivo.substring(1, arquivo.length());
-					}
-					classes.add(arquivo);
-				}
-
-			}
-		}
-
-		return classes;
-	}
-	
-	public String[] recuperaClassPathsProjeto(IJavaProject javaProject) {
-		String[] classPathEntries;
-		try {
-			classPathEntries = JavaRuntime
-					.computeDefaultRuntimeClassPath(javaProject);
-		} catch (CoreException e) {
-
-			classPathEntries = null;
-			e.printStackTrace();
-		}
-		return classPathEntries;
-	}
+	/**
+	 * Recupera as classes e interfaces de um projeto java do Eclipse
+	 * 
+	 * @param project
+	 * @return Lista com um conjunto de classes, pacotes e interfaces de um projeto java
+	 */
 	public List<ICompilationUnit> recuperaRecursosProjeto(IJavaProject project) {
 		
 		List<ICompilationUnit> compilaveis = new ArrayList<ICompilationUnit>();
@@ -84,7 +52,9 @@ public class PluginUtil {
         	                  
 	}
 	
-	
+	/*
+	 * Percorre os elementos de um projeto Java do Eclipse
+	 */
 	private void percorreElementos(IJavaElement javaElement, List<ICompilationUnit> compilaveis) {
 		
 		if (javaElement instanceof IPackageFragment) {
@@ -106,6 +76,14 @@ public class PluginUtil {
 		
 	}
 	
+	
+	/**
+	 * Recupera um conjunto de um tipo específico de anotação para uma lista de compiláveis
+	 * 
+	 * @param classe
+	 * @param compilaveis
+	 * @return Elementos de um projeto java com a anotação específica
+	 */
 	public List<IType> recuperaElementosComAnotacao(Class<? extends Annotation> classe, List<ICompilationUnit> compilaveis) {
 		List<IType> classesComAnotacao = new ArrayList<IType>();
 		for (ICompilationUnit compilationUnit : compilaveis) {
@@ -118,38 +96,49 @@ public class PluginUtil {
 		
 		return classesComAnotacao;
 	}
-
 	
 	
-	public List<URL> recuperaUrlsClasse(String[] classPathEntries) {
-		List<URL> urlList = new ArrayList<URL>();
-		if (classPathEntries != null) {
-			for (int i = 0; i < classPathEntries.length; i++) {
-				String entry = classPathEntries[i];
-				IPath path = new Path(entry);
-				URL url;
-				try {
-					url = path.toFile().toURI().toURL();
-				} catch (MalformedURLException e) {
-					url = null;
-					e.printStackTrace();
-				}
-				urlList.add(url);
-			}
-		}
-		return urlList;
+	/**
+	 * Carrega as propriedades referentes aos nomes dos artefatos dos projetos
+	 * 
+	 * @param project Projeto do eclipse
+	 */
+	public void carregaPropriedadesRastreabilidade(IProject project) {
+		IFile arquivo = project.getFile("./rastreabilidade.properties");
+		
+		Properties defaultProps = new Properties(System.getProperties());
+		try {
+			defaultProps.load(arquivo.getContents());
+		} catch (IOException e) {
+			throw new IllegalArgumentException("Arquivo de propriedades do projeto ausente ou corrompido.");
+		} catch (CoreException e) {
+			e.printStackTrace();
+		}				
+		
+	
+		System.setProperties(defaultProps);
 	}	
 	
-	
-	public URLClassLoader getProjectClassLoader(IProject project,
-			List<URL> urlList) {
-		ClassLoader parentClassLoader = project.getClass().getClassLoader();
-		URL[] urls = (URL[]) urlList.toArray(new URL[urlList.size()]);
-		URLClassLoader classLoader = new URLClassLoader(urls, parentClassLoader);
-
-		return classLoader;
+	/**
+	 * Recupera os valores das chaves de elementos de rastreabilidade previamente carregados no projeto
+	 * 
+	 * @param chave
+	 * @return Valor a ser apresentado de um elemento de rastreabilidade
+	 */
+	public String recuperaPropriedadeRastreabilidade(String chave) {
+		String valor = System.getProperty(chave);
+		
+		if (valor == null) {
+			String mensagem = String.format("A chave \'%s\' é inexistente.", chave);
+			throw new IllegalArgumentException(mensagem);
+		}
+		
+		return valor;
 	}
+
 	
+	
+
 	/**
 	 * Procura arquivos compilados do projeto
 	 * 
@@ -176,10 +165,5 @@ public class PluginUtil {
 		}
 
 	}	
-	
-	
-
-	
-	
 
 }

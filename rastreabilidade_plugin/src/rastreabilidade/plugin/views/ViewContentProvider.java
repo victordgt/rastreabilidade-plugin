@@ -55,12 +55,14 @@ public class ViewContentProvider implements IStructuredContentProvider, ITreeCon
 		return false;
 	}
 
-	/*
+	/**
+	 * Inicializa a view com a ‡rvore padr‹o de casos de uso
+	 * 
 	 * We will set up a dummy model to initialize tree heararchy. In a real
 	 * code, you will connect to a real model and expose its hierarchy.
 	 */
 	private void initialize() {
-		GerenciadorCasoDeUso gerenciador = new GerenciadorCasoDeUso();	
+		GerenciadorCasoDeUso gerenciador = new GerenciadorCasoDeUso(viewPart.getSite().getShell());	
 		Map<String, List<IType>> mapa = gerenciador.constroiMapa();
 		IGerenciadorArvore gerenciadorArvore = new ConstrutorArvoreView(mapa);
 		invisibleRoot = gerenciadorArvore.constroi();			

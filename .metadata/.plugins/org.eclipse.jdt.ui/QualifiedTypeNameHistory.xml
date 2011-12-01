@@ -10,7 +10,6 @@
 <fullyQualifiedTypeName name="org.eclipse.jdt.core.IAnnotation"/>
 <fullyQualifiedTypeName name="org.eclipse.jdt.core.IMemberValuePair"/>
 <fullyQualifiedTypeName name="org.eclipse.jdt.internal.compiler.apt.model.AnnotationMemberValue"/>
-<fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
 <fullyQualifiedTypeName name="rastreabilidade.plugin.views.TreeObject"/>
 <fullyQualifiedTypeName name="org.eclipse.core.resources.IResource"/>
 <fullyQualifiedTypeName name="rastreabilidade.plugin.anotacao.AnotacaoUtil"/>
@@ -20,7 +19,17 @@
 <fullyQualifiedTypeName name="rastreabilidade.plugin.artefato.GerenciadorArtefato"/>
 <fullyQualifiedTypeName name="rastreabilidade.plugin.views.ConstrutorArvoreView"/>
 <fullyQualifiedTypeName name="rastreabilidade.plugin.artefato.GerenciadorRegraDeNegocio"/>
-<fullyQualifiedTypeName name="java.util.Properties"/>
-<fullyQualifiedTypeName name="java.io.InputStream"/>
 <fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="javax.annotation.processing.Filer"/>
+<fullyQualifiedTypeName name="javax.tools.StandardLocation"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="org.eclipse.core.runtime.Path"/>
+<fullyQualifiedTypeName name="org.eclipse.jdt.core.IJavaElement"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.Listener"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.Button"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.Event"/>
+<fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+<fullyQualifiedTypeName name="rastreabilidade.plugin.ui.MessageDialogUtil"/>
 </qualifiedTypeNameHistroy>

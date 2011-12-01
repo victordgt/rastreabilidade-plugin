@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="290" key="org.eclipse.jdt.internal.debug.ui.actions.PopupInspectAction$2DIALOG_X_ORIGIN"/>
-	<item value="421" key="org.eclipse.jdt.internal.debug.ui.actions.PopupInspectAction$2DIALOG_Y_ORIGIN"/>
+	<item value="360" key="org.eclipse.jdt.internal.debug.ui.actions.PopupInspectAction$2DIALOG_X_ORIGIN"/>
+	<item value="429" key="org.eclipse.jdt.internal.debug.ui.actions.PopupInspectAction$2DIALOG_Y_ORIGIN"/>
 	<section name="org.eclipse.debug.ui.sourcelookup.SourceLookupDialog">
 		<item value="525" key="DIALOG_WIDTH"/>
 		<item value="127" key="DIALOG_Y_ORIGIN"/>

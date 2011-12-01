@@ -1,4 +1,4 @@
-#Sat Nov 05 23:05:15 BRST 2011
-prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="e.getClass().getClassLoader()"/>\n<expression enabled\="true" text\="File.listRoots()[0].getAbsolutePath()"/>\n</watchExpressions>\n
+#Wed Nov 30 22:57:36 BRST 2011
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="javaProject.getPackageFragments()"/>\n</watchExpressions>\n
 eclipse.preferences.version=1
-org.eclipse.debug.core.PREF_BREAKPOINT_MANAGER_ENABLED_STATE=true
+org.eclipse.debug.core.PREF_BREAKPOINT_MANAGER_ENABLED_STATE=false

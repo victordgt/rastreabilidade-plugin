@@ -1,0 +1,8 @@
+package rastreabilidade.plugin.ui.views;
+
+
+public interface IGerenciadorArvore {
+
+	public abstract TreeParent constroi();
+
+}

@@ -1,11 +1,13 @@
 package rastreabilidade.plugin.artefato;
 
+import org.eclipse.swt.widgets.Shell;
+
 import rastreabilidade.RegraDeNegocio;
 
 public class GerenciadorRegraDeNegocio extends GerenciadorArtefato {
 	
-	public GerenciadorRegraDeNegocio() {
-		super(RegraDeNegocio.class, "identificador");
+	public GerenciadorRegraDeNegocio(Shell shell) {
+		super(RegraDeNegocio.class, "identificador", shell);
 	}
 
 }

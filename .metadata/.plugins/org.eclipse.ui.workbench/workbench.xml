@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="38" version="2.0">
+<workbench progressCount="52" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="21" y="56">
 <fastViewData fastViewLocation="1024"/>
@@ -24,6 +24,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="152" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.pde.ua.ui.ctxHelpEditor" itemType="typeToolBarContribution" x="32" y="22"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.pde.ui.manifestEditor" itemType="typeToolBarContribution" x="32" y="22"/>
@@ -31,7 +32,7 @@
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page aggregateWorkingSetId="Aggregate for window 1319593040924" focus="true" label="Workspace - Java">
+<page aggregateWorkingSetId="Aggregate for window 1319593040924" focus="true" label="Workspace - Java EE">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
@@ -63,6 +64,11 @@
 <part id="23"/>
 <part id="24"/>
 <part id="25"/>
+<part id="26"/>
+<part id="27"/>
+<part id="28"/>
+<part id="29"/>
+<part id="30"/>
 </presentation>
 </folder>
 </info>
@@ -77,50 +83,46 @@
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PluginUtil.java" partName="PluginUtil.java" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/src/rastreabilidade/plugin/util/PluginUtil.java" title="PluginUtil.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/util/PluginUtil.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/util/PluginUtil.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2779" selectionTopPixel="1230"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2582" selectionTopPixel="1490"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AnotacaoUtil.java" partName="AnotacaoUtil.java" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/src/rastreabilidade/plugin/anotacao/AnotacaoUtil.java" title="AnotacaoUtil.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/anotacao/AnotacaoUtil.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/anotacao/AnotacaoUtil.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2252" selectionTopPixel="865"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="712" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.pde.ui.manifestEditor" name="MANIFEST.MF" partName="rastreabilidade_plugin" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/META-INF/MANIFEST.MF" title="rastreabilidade_plugin" tooltip="rastreabilidade_plugin/META-INF/MANIFEST.MF" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_plugin/META-INF/MANIFEST.MF"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ConstrutorArvoreView.java" partName="ConstrutorArvoreView.java" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/src/rastreabilidade/plugin/views/ConstrutorArvoreView.java" title="ConstrutorArvoreView.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/views/ConstrutorArvoreView.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/views/ConstrutorArvoreView.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="20" selectionOffset="184" selectionTopPixel="280"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ConstrutorArvoreView.java" partName="ConstrutorArvoreView.java" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/src/rastreabilidade/plugin/ui/views/ConstrutorArvoreView.java" title="ConstrutorArvoreView.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/ui/views/ConstrutorArvoreView.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/ui/views/ConstrutorArvoreView.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="39" selectionOffset="1454" selectionTopPixel="225"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RastreabilidadeView.java" partName="RastreabilidadeView.java" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/src/rastreabilidade/plugin/views/RastreabilidadeView.java" title="RastreabilidadeView.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/views/RastreabilidadeView.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/views/RastreabilidadeView.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4442" selectionTopPixel="1223"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RastreabilidadeView.java" partName="RastreabilidadeView.java" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/src/rastreabilidade/plugin/ui/views/RastreabilidadeView.java" title="RastreabilidadeView.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/ui/views/RastreabilidadeView.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/ui/views/RastreabilidadeView.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3872" selectionTopPixel="363"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TreeObject.java" partName="TreeObject.java" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/src/rastreabilidade/plugin/views/TreeObject.java" title="TreeObject.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/views/TreeObject.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/views/TreeObject.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="670" selectionTopPixel="7"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TreeObject.java" partName="TreeObject.java" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/src/rastreabilidade/plugin/ui/views/TreeObject.java" title="TreeObject.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/ui/views/TreeObject.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/ui/views/TreeObject.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="270" selectionTopPixel="60"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ViewContentProvider.java" partName="ViewContentProvider.java" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/src/rastreabilidade/plugin/views/ViewContentProvider.java" title="ViewContentProvider.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/views/ViewContentProvider.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/views/ViewContentProvider.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="59" selectionOffset="1645" selectionTopPixel="475"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ViewContentProvider.java" partName="ViewContentProvider.java" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/src/rastreabilidade/plugin/ui/views/ViewContentProvider.java" title="ViewContentProvider.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/ui/views/ViewContentProvider.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/ui/views/ViewContentProvider.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="61" selectionOffset="1646" selectionTopPixel="690"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NameSorter.java" partName="NameSorter.java" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/src/rastreabilidade/plugin/views/NameSorter.java" title="NameSorter.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/views/NameSorter.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/views/NameSorter.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="95" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NameSorter.java" partName="NameSorter.java" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/src/rastreabilidade/plugin/ui/views/NameSorter.java" title="NameSorter.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/ui/views/NameSorter.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/ui/views/NameSorter.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="98" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TreeParent.java" partName="TreeParent.java" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/src/rastreabilidade/plugin/views/TreeParent.java" title="TreeParent.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/views/TreeParent.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/views/TreeParent.java"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TreeParent.java" partName="TreeParent.java" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/src/rastreabilidade/plugin/ui/views/TreeParent.java" title="TreeParent.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/ui/views/TreeParent.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/ui/views/TreeParent.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IGerenciadorArvore.java" partName="IGerenciadorArvore.java" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/src/rastreabilidade/plugin/views/IGerenciadorArvore.java" title="IGerenciadorArvore.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/views/IGerenciadorArvore.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/views/IGerenciadorArvore.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ViewLabelProvider.java" partName="ViewLabelProvider.java" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/src/rastreabilidade/plugin/views/ViewLabelProvider.java" title="ViewLabelProvider.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/views/ViewLabelProvider.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/views/ViewLabelProvider.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GerenciadorArvoreRegraDeNegocio.java" partName="GerenciadorArvoreRegraDeNegocio.java" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/src/rastreabilidade/plugin/views/regradenegocio/GerenciadorArvoreRegraDeNegocio.java" title="GerenciadorArvoreRegraDeNegocio.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/views/regradenegocio/GerenciadorArvoreRegraDeNegocio.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/views/regradenegocio/GerenciadorArvoreRegraDeNegocio.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="31" selectionOffset="683" selectionTopPixel="193"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ViewLabelProvider.java" partName="ViewLabelProvider.java" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/src/rastreabilidade/plugin/ui/views/ViewLabelProvider.java" title="ViewLabelProvider.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/ui/views/ViewLabelProvider.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/ui/views/ViewLabelProvider.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="202" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GerenciadorRegraDeNegocio.java" partName="GerenciadorRegraDeNegocio.java" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/src/rastreabilidade/plugin/views/regradenegocio/GerenciadorRegraDeNegocio.java" title="GerenciadorRegraDeNegocio.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/views/regradenegocio/GerenciadorRegraDeNegocio.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/views/regradenegocio/GerenciadorRegraDeNegocio.java"/>
@@ -143,7 +145,7 @@
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GerenciadorArtefato.java" partName="GerenciadorArtefato.java" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/src/rastreabilidade/plugin/artefato/GerenciadorArtefato.java" title="GerenciadorArtefato.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/artefato/GerenciadorArtefato.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/artefato/GerenciadorArtefato.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2300" selectionTopPixel="820"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1947" selectionTopPixel="950"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GerenciadorRegraDeNegocio.java" partName="GerenciadorRegraDeNegocio.java" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/src/rastreabilidade/plugin/artefato/GerenciadorRegraDeNegocio.java" title="GerenciadorRegraDeNegocio.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/artefato/GerenciadorRegraDeNegocio.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/artefato/GerenciadorRegraDeNegocio.java"/>
@@ -151,11 +153,11 @@
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GerenciadorCasoDeUso.java" partName="GerenciadorCasoDeUso.java" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/src/rastreabilidade/plugin/artefato/GerenciadorCasoDeUso.java" title="GerenciadorCasoDeUso.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/artefato/GerenciadorCasoDeUso.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/artefato/GerenciadorCasoDeUso.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="205" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="136" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="APTTeste.java" partName="APTTeste.java" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_processor/src/rastreabilidade/processor/APTTeste.java" title="APTTeste.java" tooltip="rastreabilidade_processor/src/rastreabilidade/processor/APTTeste.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="APTTeste.java" partName="APTTeste.java" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_processor/src/rastreabilidade/processor/APTTeste.java" title="APTTeste.java" tooltip="rastreabilidade_processor/src/rastreabilidade/processor/APTTeste.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_processor/src/rastreabilidade/processor/APTTeste.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1757" selectionTopPixel="695"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2165" selectionTopPixel="457"/>
 </editor>
 <editor id="org.eclipse.ui.DefaultTextEditor" name="MANIFEST.MF" partName="MANIFEST.MF" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_processor/src/META-INF/MANIFEST.MF" title="MANIFEST.MF" tooltip="rastreabilidade_processor/src/META-INF/MANIFEST.MF" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_processor/src/META-INF/MANIFEST.MF"/>
@@ -165,12 +167,38 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_processor/src/META-INF/services/javax.annotation.processing.Processor"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="26" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.ClassFileEditor" name="AnnotationMirrorImpl.class" partName="AnnotationMirrorImpl.class" title="AnnotationMirrorImpl.class" tooltip="org.eclipse.jdt.internal.compiler.apt.model.AnnotationMirrorImpl" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=rastreabilidade_plugin/\/Applications\/eclipse\/plugins\/org.eclipse.jdt.compiler.apt_1.0.300.v20100513-0845.jar&lt;org.eclipse.jdt.internal.compiler.apt.model(AnnotationMirrorImpl.class"/>
+<editor id="org.eclipse.jdt.ui.ClassFileEditor" name="RoundDispatcher.class" partName="RoundDispatcher.class" title="RoundDispatcher.class" tooltip="org.eclipse.jdt.internal.compiler.apt.dispatch.RoundDispatcher" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=rastreabilidade_plugin/\/Applications\/eclipse\/plugins\/org.eclipse.jdt.compiler.apt_1.0.300.v20100513-0845.jar&lt;org.eclipse.jdt.internal.compiler.apt.dispatch(RoundDispatcher.class"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Activator.java" partName="Activator.java" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/src/rastreabilidade/plugin/Activator.java" title="Activator.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/Activator.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/Activator.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="736" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.ClassFileEditor" name="IJavaProject.class" partName="IJavaProject.class" title="IJavaProject.class" tooltip="org.eclipse.jdt.core.IJavaProject" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=rastreabilidade_plugin/\/Applications\/eclipse\/plugins\/org.eclipse.jdt.core_3.6.2.v_A76_R36x.jar&lt;org.eclipse.jdt.core(IJavaProject.class"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MessageDialogUtil.java" partName="MessageDialogUtil.java" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/src/rastreabilidade/plugin/ui/MessageDialogUtil.java" title="MessageDialogUtil.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/ui/MessageDialogUtil.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/ui/MessageDialogUtil.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="360" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.ClassFileEditor" name="StructuredViewer.class" partName="StructuredViewer.class" title="StructuredViewer.class" tooltip="org.eclipse.jface.viewers.StructuredViewer" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=rastreabilidade_plugin/\/Applications\/eclipse\/plugins\/org.eclipse.jface_3.6.2.M20110210-1200.jar&lt;org.eclipse.jface.viewers(StructuredViewer.class"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.pde.ua.ui.ctxHelpEditor" name="contexts.xml" partName="contexts.xml" path="/Users/Victor/Documents/rastreabilidade-plugin/rastreabilidade_plugin/contexts.xml" title="contexts.xml" tooltip="rastreabilidade_plugin/contexts.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/rastreabilidade_plugin/contexts.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.ClassFileEditor" name="Hashtable.class" partName="Hashtable.class" title="Hashtable.class" tooltip="java.util.Hashtable" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=rastreabilidade_framework/\/System\/Library\/Java\/JavaVirtualMachines\/1.6.0.jdk\/Contents\/Classes\/classes.jar&lt;java.util(Hashtable.class"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
+<view id="org.eclipse.team.ui.GenericHistoryView" partName="History">
+<viewState/>
+</view>
 <view id="org.eclipse.search.ui.views.SearchView" partName="Search">
 <viewState isPinned="false">
 <view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
@@ -226,9 +254,7 @@
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
-<customFilters userDefinedPatternsEnabled="false">
-<xmlDefinedFilters>
-<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
+<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.CuAndClassFileFilter" isEnabled="false"/>
 <child filterId="org.eclipse.pde.ui.ExternalPluginLibrariesFilter1" isEnabled="true"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer_patternFilterId_RemoteSystemsConnections" isEnabled="false"/>
@@ -259,9 +285,7 @@
 </view>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks" partName="Task List">
 <viewState linkWithEditor="true" presentation="org.eclipse.mylyn.tasks.ui.categorized">
-<sorter groupBy="CATEGORY_QUERY">
-<sorter>
-<sort0 sortDirection="1" sortKey="PRIORITY"/>
+<sorter groupBy="CATEGORY_QUERY">&#x0A;<sorter>&#x0A;<sort0 sortDirection="1" sortKey="PRIORITY"/>
 <sort1 sortDirection="1" sortKey="RANK"/>
 <sort2 sortDirection="1" sortKey="DATE_CREATED"/>
 <sort3 sortDirection="1" sortKey="NONE"/>
@@ -278,7 +302,7 @@
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 <view id="org.eclipse.wst.server.ui.ServersView" partName="Servers"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jst.j2ee.internal.perspective.J2EEPerspective" id="org.eclipse.jst.j2ee.J2EEPerspective" label="Java EE"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -346,6 +370,7 @@
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.search.ui.views.SearchView"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
+<view id="org.eclipse.team.ui.GenericHistoryView"/>
 <view id="org.eclipse.ui.navigator.ProjectExplorer"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
@@ -371,7 +396,7 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.27711686" ratioLeft="396" ratioRight="1033" relationship="2" relative="topLeft"/>
+<info part="org.eclipse.ui.editorss" ratio="0.21553534" ratioLeft="308" ratioRight="1121" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottomRight" ratio="0.6998536" ratioLeft="478" ratioRight="205" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.AllMarkersView" label="Markers"/>
@@ -382,6 +407,7 @@
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
+<page content="org.eclipse.team.ui.GenericHistoryView" label="History"/>
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
@@ -395,6 +421,7 @@
 <part id="5"/>
 <part id="6"/>
 <part id="7"/>
+<part id="8"/>
 </presentation>
 </folder>
 </info>
@@ -455,6 +482,7 @@
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.search.ui.views.SearchView"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.wst.server.ui.ServersView"/>
 <view id="org.eclipse.debug.ui.VariableView"/>
@@ -462,62 +490,48 @@
 <view id="org.eclipse.debug.ui.ExpressionView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.wst.server.ui.ServersView" label="Servers"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1074" ratioRight="358" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1074" ratioRight="358" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.74965984" ratioLeft="551" ratioRight="184" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.74965984" ratioLeft="551" ratioRight="184" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
 <page content="org.eclipse.datatools.sqltools.result.resultView" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
 <page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
 <page content="org.eclipse.wst.xsl.jaxp.debug.ui.view1" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.44827586" ratioLeft="247" ratioRight="304" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="1074" ratioRight="358" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="1074" ratioRight="358" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="716" ratioRight="716" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="716" ratioRight="716" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.BreakpointView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 </presentation>
@@ -597,65 +611,51 @@
 <view id="org.eclipse.jdt.ui.JavadocView"/>
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.search.ui.views.SearchView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="left">
-<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="left">&#x0A;<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
 <page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.junit.ResultView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1074" ratioRight="358" relationship="2" relative="left">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1074" ratioRight="358" relationship="2" relative="left">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="358" ratioRight="1074" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.74898237" ratioLeft="552" ratioRight="185" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<info folder="true" part="bottom" ratio="0.74898237" ratioLeft="552" ratioRight="185" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@72c8c9ae" ratio="0.7495344" ratioLeft="805" ratioRight="269" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.mylyn.tasks.ui.views.tasks" appearance="2" expanded="2">
-<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="Task List"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@72c8c9ae" ratio="0.7495344" ratioLeft="805" ratioRight="269" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.mylyn.tasks.ui.views.tasks" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="Task List"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="right" ratio="0.5" ratioLeft="276" ratioRight="276" relationship="4" relative="org.eclipse.ui.internal.ViewStack@72c8c9ae">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="right" ratio="0.5" ratioLeft="276" ratioRight="276" relationship="4" relative="org.eclipse.ui.internal.ViewStack@72c8c9ae">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
@@ -666,158 +666,162 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/rastreabilidade_processor/src/rastreabilidade/processor/APTTeste.java"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=rastreabilidade_plugin/\/Applications\/eclipse\/plugins\/org.eclipse.jdt.compiler.apt_1.0.300.v20100513-0845.jar&lt;org.eclipse.jdt.internal.compiler.apt.model(AnnotationMirrorImpl.class"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/artefato/GerenciadorArtefato.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/util/PluginUtil.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/Activator.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/ui/views/RastreabilidadeView.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/ui/views/ViewContentProvider.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.pde.ui.manifestEditor" path="/rastreabilidade_plugin/META-INF/MANIFEST.MF"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=rastreabilidade_plugin/\/Applications\/eclipse\/plugins\/org.eclipse.jface_3.6.2.M20110210-1200.jar&lt;org.eclipse.jface.viewers(ColumnViewer.class"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=rastreabilidade_plugin/\/Applications\/eclipse\/plugins\/org.eclipse.jface_3.6.2.M20110210-1200.jar&lt;org.eclipse.jface.viewers(StructuredViewer.class"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=rastreabilidade_plugin/\/Applications\/eclipse\/plugins\/org.eclipse.jface_3.6.2.M20110210-1200.jar&lt;org.eclipse.jface.viewers(AbstractTreeViewer.class"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=rastreabilidade_plugin/\/Applications\/eclipse\/plugins\/org.eclipse.jface_3.6.2.M20110210-1200.jar&lt;org.eclipse.jface.viewers(TreeViewer.class"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/rastreabilidade_framework/src/rastreabilidade/CasoDeUso.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/util/PluginUtil.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/Activator.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/anotacao/AnotacaoUtil.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/artefato/GerenciadorArtefato.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/artefato/GerenciadorCasoDeUso.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/artefato/GerenciadorRegraDeNegocio.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/ui/MessageDialogUtil.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/ui/views/ConstrutorArvoreView.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/ui/views/RastreabilidadeView.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.pde.ui.manifestEditor" path="/rastreabilidade_plugin/META-INF/MANIFEST.MF"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.pde.ua.ui.ctxHelpEditor" path="/rastreabilidade_plugin/contexts.xml"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=rastreabilidade_framework/\/System\/Library\/Java\/JavaVirtualMachines\/1.6.0.jdk\/Contents\/Classes\/classes.jar&lt;java.util(Hashtable.class"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.pde.ui.manifestEditor" path="/rastreabilidade_plugin/META-INF/MANIFEST.MF"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.pde.ua.ui.ctxHelpEditor" path="/rastreabilidade_plugin/contexts.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/rastreabilidade_plugin/src/rastreabilidade/plugin/Activator.java"/>
 </editors>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1412" y="0"/>
+<item historyLabel="GerenciadorArtefato.java" index="0">
+<position info="not_deleted" x="1848" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1412" y="0"/>
+<item historyLabel="Activator.java" index="2">
+<position info="not_deleted" x="453" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="2040" y="0"/>
+<item historyLabel="RastreabilidadeView.java" index="3">
+<position info="not_deleted" x="7220" y="105"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1846" y="0"/>
+<item historyLabel="Activator.java" index="2">
+<position info="not_deleted" x="952" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="2083" y="0"/>
+<item historyLabel="rastreabilidade_plugin" index="5"/>
+<item historyLabel="GerenciadorArtefato.java" index="0">
+<position info="not_deleted" x="1699" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1080" y="0"/>
+<item historyLabel="PluginUtil.java" index="1">
+<position info="not_deleted" x="2970" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1156" y="0"/>
+<item historyLabel="PluginUtil.java" index="1">
+<position info="not_deleted" x="3040" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1247" y="0"/>
+<item historyLabel="PluginUtil.java" index="1">
+<position info="not_deleted" x="3094" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1364" y="0"/>
+<item historyLabel="PluginUtil.java" index="1">
+<position info="not_deleted" x="3335" y="0"/>
 </item>
-<item historyLabel="AnnotationMirrorImpl.class" index="1">
+<item historyLabel="PluginUtil.java" index="1">
+<position info="not_deleted" x="3373" y="0"/>
+</item>
+<item historyLabel="GerenciadorArtefato.java" index="0">
+<position info="not_deleted" x="1699" y="0"/>
+</item>
+<item historyLabel="GerenciadorArtefato.java" index="0">
+<position info="not_deleted" x="1857" y="0"/>
+</item>
+<item historyLabel="GerenciadorArtefato.java" index="0">
+<position info="not_deleted" x="1947" y="0"/>
+</item>
+<item historyLabel="ColumnViewer.class" index="6">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1846" y="0"/>
+<item historyLabel="PluginUtil.java" index="1">
+<position info="not_deleted" x="2582" y="50"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="2083" y="0"/>
+<item historyLabel="StructuredViewer.class" index="7">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1846" y="0"/>
+<item historyLabel="ViewContentProvider.java" index="4">
+<position info="not_deleted" x="850" y="17"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1868" y="1"/>
+<item historyLabel="ViewContentProvider.java" index="4">
+<position info="not_deleted" x="1646" y="61"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1846" y="0"/>
+<item historyLabel="PluginUtil.java" index="1">
+<position info="not_deleted" x="2582" y="50"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1868" y="1"/>
+<item historyLabel="ColumnViewer.class" index="6">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1846" y="0"/>
+<item historyLabel="AbstractTreeViewer.class" index="8">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="2083" y="0"/>
+<item historyLabel="TreeViewer.class" index="9">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1842" y="0"/>
+<item historyLabel="ColumnViewer.class" index="6">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1870" y="0"/>
+<item historyLabel="CasoDeUso.java" index="10">
+<position info="not_deleted" x="8" y="15"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1760" y="11"/>
+<item historyLabel="PluginUtil.java" index="11">
+<position info="not_deleted" x="2582" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1870" y="0"/>
+<item historyLabel="Activator.java" index="12">
+<position info="not_deleted" x="952" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1618" y="0"/>
+<item historyLabel="AnotacaoUtil.java" index="13">
+<position info="not_deleted" x="712" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position/>
+<item historyLabel="GerenciadorArtefato.java" index="14">
+<position info="not_deleted" x="1947" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1618" y="0"/>
+<item historyLabel="GerenciadorCasoDeUso.java" index="15">
+<position info="not_deleted" x="136" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position/>
+<item historyLabel="GerenciadorRegraDeNegocio.java" index="16">
+<position info="not_deleted" x="151" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position/>
+<item historyLabel="MessageDialogUtil.java" index="17">
+<position info="not_deleted" x="360" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position/>
+<item historyLabel="ConstrutorArvoreView.java" index="18">
+<position info="not_deleted" x="1454" y="39"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position/>
+<item historyLabel="RastreabilidadeView.java" index="19">
+<position info="not_deleted" x="2244" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1757" y="0"/>
+<item historyLabel="rastreabilidade_plugin" index="20"/>
+<item historyLabel="PluginUtil.java" index="11">
+<position info="not_deleted" x="2582" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1846" y="0"/>
+<item historyLabel="contexts.xml" index="21"/>
+<item historyLabel="rastreabilidade_plugin" index="20"/>
+<item historyLabel="Activator.java" index="12">
+<position info="not_deleted" x="736" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1618" y="0"/>
+<item historyLabel="RastreabilidadeView.java" index="19">
+<position info="not_deleted" x="2244" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1757" y="0"/>
+<item historyLabel="Hashtable.class" index="22">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1846" y="0"/>
+<item historyLabel="rastreabilidade_plugin" index="23"/>
+<item historyLabel="RastreabilidadeView.java" index="19">
+<position info="not_deleted" x="3872" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1781" y="11"/>
+<item historyLabel="rastreabilidade_plugin" index="23"/>
+<item historyLabel="rastreabilidade_plugin" index="23"/>
+<item historyLabel="RastreabilidadeView.java" index="19">
+<position info="not_deleted" x="3872" y="0"/>
 </item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1846" y="0"/>
-</item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1781" y="11"/>
-</item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1846" y="0"/>
-</item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1781" y="0"/>
-</item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1757" y="0"/>
-</item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1846" y="0"/>
-</item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1756" y="0"/>
-</item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1756" y="0"/>
-</item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1641" y="0"/>
-</item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1658" y="0"/>
-</item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1757" y="0"/>
-</item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1846" y="0"/>
-</item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1749" y="0"/>
-</item>
-<item historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1080" y="0"/>
-</item>
-<item active="true" historyLabel="APTTeste.java" index="0">
-<position info="not_deleted" x="1757" y="0"/>
+<item historyLabel="rastreabilidade_plugin" index="23"/>
+<item historyLabel="contexts.xml" index="24"/>
+<item historyLabel="rastreabilidade_plugin" index="23"/>
+<item active="true" historyLabel="Activator.java" index="25">
+<position info="not_deleted" x="736" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -836,6 +840,39 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Hashtable.class" tooltip="java.util.Hashtable">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=rastreabilidade_framework/\/System\/Library\/Java\/JavaVirtualMachines\/1.6.0.jdk\/Contents\/Classes\/classes.jar&lt;java.util(Hashtable.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.pde.ua.ui.ctxHelpEditor" name="contexts.xml" tooltip="rastreabilidade_plugin/contexts.xml">
+<persistable path="/rastreabilidade_plugin/contexts.xml"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="StructuredViewer.class" tooltip="org.eclipse.jface.viewers.StructuredViewer">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=rastreabilidade_plugin/\/Applications\/eclipse\/plugins\/org.eclipse.jface_3.6.2.M20110210-1200.jar&lt;org.eclipse.jface.viewers(StructuredViewer.class"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="ColumnViewer.class" tooltip="org.eclipse.jface.viewers.ColumnViewer">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=rastreabilidade_plugin/\/Applications\/eclipse\/plugins\/org.eclipse.jface_3.6.2.M20110210-1200.jar&lt;org.eclipse.jface.viewers(ColumnViewer.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="sample.gif" tooltip="rastreabilidade_plugin/icons/sample.gif">
+<persistable path="/rastreabilidade_plugin/icons/sample.gif"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MessageDialogUtil.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/ui/MessageDialogUtil.java">
+<persistable path="/rastreabilidade_plugin/src/rastreabilidade/plugin/ui/MessageDialogUtil.java"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="JavaProject.class" tooltip="org.eclipse.jdt.internal.core.JavaProject">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=rastreabilidade_plugin/\/Applications\/eclipse\/plugins\/org.eclipse.jdt.core_3.6.2.v_A76_R36x.jar&lt;org.eclipse.jdt.internal.core(JavaProject.class"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="IJavaProject.class" tooltip="org.eclipse.jdt.core.IJavaProject">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=rastreabilidade_plugin/\/Applications\/eclipse\/plugins\/org.eclipse.jdt.core_3.6.2.v_A76_R36x.jar&lt;org.eclipse.jdt.core(IJavaProject.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Activator.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/Activator.java">
+<persistable path="/rastreabilidade_plugin/src/rastreabilidade/plugin/Activator.java"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="RoundDispatcher.class" tooltip="org.eclipse.jdt.internal.compiler.apt.dispatch.RoundDispatcher">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=rastreabilidade_plugin/\/Applications\/eclipse\/plugins\/org.eclipse.jdt.compiler.apt_1.0.300.v20100513-0845.jar&lt;org.eclipse.jdt.internal.compiler.apt.dispatch(RoundDispatcher.class"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Compiler.class" tooltip="org.eclipse.jdt.internal.compiler.Compiler">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=rastreabilidade_plugin/\/Applications\/eclipse\/plugins\/org.eclipse.jdt.core_3.6.2.v_A76_R36x.jar&lt;org.eclipse.jdt.internal.compiler(Compiler.class"/>
+</file>
 <file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="AnnotationMirrorImpl.class" tooltip="org.eclipse.jdt.internal.compiler.apt.model.AnnotationMirrorImpl">
 <persistable org.eclipse.jdt.ui.ClassFileIdentifier="=rastreabilidade_plugin/\/Applications\/eclipse\/plugins\/org.eclipse.jdt.compiler.apt_1.0.300.v20100513-0845.jar&lt;org.eclipse.jdt.internal.compiler.apt.model(AnnotationMirrorImpl.class"/>
 </file>
@@ -844,39 +881,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="MANIFEST.MF" tooltip="rastreabilidade_processor/src/META-INF/MANIFEST.MF">
 <persistable path="/rastreabilidade_processor/src/META-INF/MANIFEST.MF"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="APTTeste.java" tooltip="rastreabilidade_processor/src/rastreabilidade/processor/APTTeste.java">
-<persistable path="/rastreabilidade_processor/src/rastreabilidade/processor/APTTeste.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GerenciadorCasoDeUso.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/artefato/GerenciadorCasoDeUso.java">
-<persistable path="/rastreabilidade_plugin/src/rastreabilidade/plugin/artefato/GerenciadorCasoDeUso.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GerenciadorRegraDeNegocio.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/artefato/GerenciadorRegraDeNegocio.java">
-<persistable path="/rastreabilidade_plugin/src/rastreabilidade/plugin/artefato/GerenciadorRegraDeNegocio.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GerenciadorArtefato.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/artefato/GerenciadorArtefato.java">
-<persistable path="/rastreabilidade_plugin/src/rastreabilidade/plugin/artefato/GerenciadorArtefato.java"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="IAdaptable.class" tooltip="org.eclipse.core.runtime.IAdaptable">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=rastreabilidade_plugin/\/Applications\/eclipse\/plugins\/org.eclipse.equinox.common_3.6.0.v20100503.jar&lt;org.eclipse.core.runtime(IAdaptable.class"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="ClassLoader.class" tooltip="java.lang.ClassLoader">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=rastreabilidade_framework/\/System\/Library\/Java\/JavaVirtualMachines\/1.6.0.jdk\/Contents\/Classes\/classes.jar&lt;java.lang(ClassLoader.class"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="IJavaElement.class" tooltip="org.eclipse.jdt.core.IJavaElement">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=rastreabilidade_plugin/\/Applications\/eclipse\/plugins\/org.eclipse.jdt.core_3.6.2.v_A76_R36x.jar&lt;org.eclipse.jdt.core(IJavaElement.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.pde.ui.manifestEditor" name="plugin.xml" tooltip="PluginsSercos/plugin.xml">
-<persistable path="/PluginsSercos/plugin.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.pde.ui.manifestEditor" name="MANIFEST.MF" tooltip="rastreabilidade_framework_runtime/META-INF/MANIFEST.MF">
-<persistable path="/rastreabilidade_framework_runtime/META-INF/MANIFEST.MF"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GerenciadorCasoDeUso.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/views/regradenegocio/GerenciadorCasoDeUso.java">
-<persistable path="/rastreabilidade_plugin/src/rastreabilidade/plugin/views/regradenegocio/GerenciadorCasoDeUso.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GerenciadorArvoreCasoDeUso.java" tooltip="rastreabilidade_plugin/src/rastreabilidade/plugin/views/regradenegocio/GerenciadorArvoreCasoDeUso.java">
-<persistable path="/rastreabilidade_plugin/src/rastreabilidade/plugin/views/regradenegocio/GerenciadorArvoreCasoDeUso.java"/>
 </file>
 </mruList>
 </workbench>
