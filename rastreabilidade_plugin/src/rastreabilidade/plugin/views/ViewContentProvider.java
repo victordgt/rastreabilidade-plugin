@@ -64,7 +64,7 @@ public class ViewContentProvider implements IStructuredContentProvider, ITreeCon
 	private void initialize() {
 		GerenciadorCasoDeUso gerenciador = new GerenciadorCasoDeUso(viewPart.getSite().getShell());	
 		Map<String, List<IType>> mapa = gerenciador.constroiMapa();
-		IGerenciadorArvore gerenciadorArvore = new ConstrutorArvoreView(mapa);
+		IGerenciadorArvore gerenciadorArvore = new ConstrutorArvoreCasoDeUso(mapa);
 		invisibleRoot = gerenciadorArvore.constroi();			
 	}
 	

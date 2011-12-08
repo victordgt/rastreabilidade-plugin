@@ -1,0 +1,5 @@
+package rastreabilidade.plugin.views;
+
+public class ConstrutorArvoreCasoDeUso extends ConstrutorArvoreView {
+
+}

@@ -5,6 +5,14 @@ import java.util.List;
 
 public class TreeParent extends TreeObject {
 	private List<TreeObject> children;
+	private String caminhoImagem;
+	
+	public String getCaminhoImagem() {
+		return caminhoImagem;
+	}
+	public void setCaminhoImagem(String caminhoImagem) {
+		this.caminhoImagem = caminhoImagem;
+	}
 	public TreeParent(String name) {
 		super(name);
 		children = new ArrayList<TreeObject>();

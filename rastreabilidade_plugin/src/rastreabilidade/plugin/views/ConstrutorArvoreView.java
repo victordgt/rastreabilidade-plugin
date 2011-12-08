@@ -29,20 +29,20 @@ public class ConstrutorArvoreView implements IGerenciadorArvore {
 		TreeParent nodoInvisivel = new TreeParent("invisivel");
 		
 		for (String elemento : elementosRequisito) {		
-				TreeParent nodoCasoDeUso = null;
+				TreeParent nodoArvore = null;
 						
-				nodoCasoDeUso = mapaElementoRequisito.get(elemento);
+				nodoArvore = mapaElementoRequisito.get(elemento);
 				
-				if (nodoCasoDeUso == null) {
-					nodoCasoDeUso = new TreeParent(elemento);
-					mapaElementoRequisito.put(elemento, nodoCasoDeUso);
-					nodoInvisivel.addChild(nodoCasoDeUso);
+				if (nodoArvore == null) {
+					nodoArvore = new TreeParent(elemento);
+					mapaElementoRequisito.put(elemento, nodoArvore);
+					nodoInvisivel.addChild(nodoArvore);
 				}
 				
 				
 				List<IType> classes = mapa.get(elemento);
 				
-				adicionaNodosTreeObject(nodoCasoDeUso, classes);
+				adicionaNodosTreeObject(nodoArvore, classes);
 		}
 		
 		return nodoInvisivel;
@@ -51,12 +51,12 @@ public class ConstrutorArvoreView implements IGerenciadorArvore {
 	/*
 	 * Adiciona os elementos que representam as classes
 	 */
-	private void adicionaNodosTreeObject(TreeParent nodoCasoDeUso,
+	private void adicionaNodosTreeObject(TreeParent treeParent,
 			List<IType> classes) {
 		if (classes != null) {
 			for (IType classe : classes) {
 				TreeObject nodo = new TreeObject(classe.getElementName());
-				nodoCasoDeUso.addChild(nodo);
+				treeParent.addChild(nodo);
 				nodo.setResource(classe.getResource());
 			}
 				

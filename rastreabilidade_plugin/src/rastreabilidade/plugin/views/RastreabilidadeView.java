@@ -9,10 +9,8 @@ import org.eclipse.jdt.core.IType;
 import org.eclipse.jface.action.Action;
 import org.eclipse.jface.action.IMenuListener;
 import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.action.IToolBarManager;
 import org.eclipse.jface.action.MenuManager;
 import org.eclipse.jface.action.Separator;
-import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.jface.viewers.DoubleClickEvent;
 import org.eclipse.jface.viewers.IDoubleClickListener;
 import org.eclipse.jface.viewers.ISelection;
@@ -129,6 +127,7 @@ public class RastreabilidadeView extends ViewPart {
 		manager.add(new Separator(IWorkbenchActionConstants.MB_ADDITIONS));
 	}
 	
+	/*
 	private void fillLocalToolBar(IToolBarManager manager) {
 		manager.add(action1);
 		manager.add(action2);
@@ -137,6 +136,7 @@ public class RastreabilidadeView extends ViewPart {
 		manager.add(new Separator());
 		drillDownAdapter.addNavigationActions(manager);
 	}
+	*/
 
 	private void makeActions() {
 		constroiAction1();
@@ -184,7 +184,7 @@ public class RastreabilidadeView extends ViewPart {
 			public void run() {
 				GerenciadorCasoDeUso gerenciador = new GerenciadorCasoDeUso(viewer.getControl().getShell());
 				Map<String, List<IType>> mapa = gerenciador.constroiMapa();
-				ConstrutorArvoreView gerenciadorArvore = new ConstrutorArvoreView(mapa);
+				IGerenciadorArvore gerenciadorArvore = new ConstrutorArvoreCasoDeUso(mapa);
 				viewContentProvider.setInvisibleRoot(gerenciadorArvore.constroi());
 				//tentar atualizar para outro tipo de vis‹o
 				viewer.refresh();
@@ -202,7 +202,7 @@ public class RastreabilidadeView extends ViewPart {
 			public void run() {
 				GerenciadorRegraDeNegocio gerenciador = new GerenciadorRegraDeNegocio(viewer.getControl().getShell());
 				Map<String, List<IType>> mapa = gerenciador.constroiMapa();
-				ConstrutorArvoreView gerenciadorArvore = new ConstrutorArvoreView(mapa);
+				IGerenciadorArvore gerenciadorArvore = new ConstrutorArvoreRegraNegocio(mapa);
 				viewContentProvider.setInvisibleRoot(gerenciadorArvore.constroi());
 				//tentar atualizar para outro tipo de vis‹o
 				viewer.refresh();
@@ -223,12 +223,14 @@ public class RastreabilidadeView extends ViewPart {
 			}
 		});
 	}
+	
+	/*
 	private void showMessage(String message) {
 		MessageDialog.openInformation(
 			viewer.getControl().getShell(),
 			"Rastreabilidade View",
 			message);
-	}
+	}*/
 
 	/**
 	 * Passing the focus request to the viewer's control.
