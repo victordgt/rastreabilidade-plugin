@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;rastreabilidade.processor.APTTeste&apos; to &apos;RastreabilidadeProcessor&apos;&#x0A;- Original project: &apos;rastreabilidade_processor&apos;&#x0A;- Original element: &apos;rastreabilidade.processor.APTTeste&apos;&#x0A;- Renamed element: &apos;rastreabilidade.processor.RastreabilidadeProcessor&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;APTTeste&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;rastreabilidade.processor{APTTeste.java[APTTeste" matchStrategy="1" name="RastreabilidadeProcessor" qualified="false" references="true" similarDeclarations="false" stamp="1323569933004" textual="false" version="1.0"/>
+</session>

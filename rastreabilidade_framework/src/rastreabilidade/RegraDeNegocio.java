@@ -7,7 +7,7 @@ import java.lang.annotation.RetentionPolicy;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface RegraDeNegocio {
 	
-	String identificador();
+	String chave();
 	
 
 }

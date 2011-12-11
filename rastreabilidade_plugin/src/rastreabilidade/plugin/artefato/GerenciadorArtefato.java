@@ -86,7 +86,7 @@ public abstract class GerenciadorArtefato {
 
 	
 	/**
-	 * FILTRA POR PADRÃO UMA ANNOTATION COM UM CAMPO NOME
+	 * FILTRA POR PADRÃO UMA ANNOTATION COM UM CAMPO COM UM NOME ESPECÍFICO
 	 * @param classesComAnotacao
 	 */
 	protected  void filtrar(List<IType> classesComAnotacao) {

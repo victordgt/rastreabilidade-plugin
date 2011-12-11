@@ -7,7 +7,7 @@ import rastreabilidade.RegraDeNegocio;
 public class GerenciadorRegraDeNegocio extends GerenciadorArtefato {
 	
 	public GerenciadorRegraDeNegocio(Shell shell) {
-		super(RegraDeNegocio.class, "identificador", shell);
+		super(RegraDeNegocio.class, "chave", shell);
 	}
 
 }

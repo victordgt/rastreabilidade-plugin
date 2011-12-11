@@ -6,7 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface CasoDeUso {
 	
-	String nome();
+	String chave();
 	String versao();
 	String autor();
 

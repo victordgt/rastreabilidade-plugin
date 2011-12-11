@@ -6,7 +6,7 @@ import rastreabilidade.CasoDeUso;
 
 public class GerenciadorCasoDeUso extends GerenciadorArtefato {
 	public GerenciadorCasoDeUso(Shell shell) {
-		super(CasoDeUso.class, "nome", shell);
+		super(CasoDeUso.class, "chave", shell);
 	}	
 	
 }
